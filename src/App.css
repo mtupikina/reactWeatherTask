@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+.cities li {
+  padding: 5px 10px 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cities li.selected, .sorting li.selected {
+  background-color: #eee;
+}
+
+.day-info {
+  width: 100px;
+  min-height: 100px;
+  font-size: 12px;
+}
+
+.day-info:not(:last-of-type) {
+  border-right: 1px solid #eee;
+}
+
+  .day-info > * {
+    padding: 0 4px;
+  }
+
+  .day-info header {
+    border-color: #eee;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    padding: 3px 0;
+  }
+
+  .day-info .max-tempr {
+    color: #f00;
+  }
+
+  .day-info .min-tempr {
+    color: #06c;
+    margin-right: 3px;
+  }
+
+  .day-info .separator {
+    padding: 0 3px;
+  }
+
+  .day-info img {
+    width: 55%;
+    margin: 5px 0;
+  }
+
+.sorting li {
+  padding: 3px 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
